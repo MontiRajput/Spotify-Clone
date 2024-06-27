@@ -1,0 +1,33 @@
+#container{
+    height: 300px;
+width:80%;
+border: 2px solid black;
+margin:10px auto;
+display: flex;
+flex-direction: row;
+/* justify-content: space-around; */
+/* flex-wrap:wrap; */
+align-content: flex-start;
+/* align-content: space-between; */
+
+}
+#one{
+    align-self: center;
+    /* min-width: 200px; */
+    flex:1 1 100px
+}
+#container div{
+    background-color: goldenrod;
+    height: 100px;
+    width: 300px;
+    border:2px solid black;
+}
+#container div:nth-of-type(2n){
+    background-color: green;
+}
+#container div:nth-of-type(3n){
+    background-color: blueviolet;
+}
+#container div:nth-of-type(4n){
+    background-color: rgb(91, 205, 63);
+}
